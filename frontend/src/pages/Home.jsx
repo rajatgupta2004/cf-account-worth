@@ -25,7 +25,8 @@ const Home = () => {
      
       <div class='w-screen h-screen flex justify-center items-center'>
   <div class='bg-white p-8 rounded-lg shadow-md relative flex flex-col items-center'>
-    <h1 class='text-2xl text-black font-bold mb-4'>Cost of Your Codeforces Account</h1>
+    <h1 class='text-2xl text-black font-bold mb-4'>Decode Your Worth</h1>
+    <h2 class='text-sm text-slate-900 mb-4'>Where Ratings, Problems, and Contributions Unite!</h2>
     <form onSubmit={handleSubmit} class='flex flex-col items-center'>
       <div class='relative flex items-center'>
         <img
