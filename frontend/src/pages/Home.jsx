@@ -39,7 +39,7 @@ const Home = () => {
           placeholder='Username'
           value={username}
           onChange={handleInputChange}
-          class='justify bg-[#3b3b3b] items-center border border-gray-300 rounded-md p-2 w-[300px] relative h-10'
+          class='justify bg-[#3b3b3b] items-center border border-gray-300 rounded-md p-2 w-[300px] relative h-10 text-white'
         />
         <button
           type='submit'
@@ -51,16 +51,6 @@ const Home = () => {
     </form>
   </div>
 </div>
-
-
-
-
-
-
-
-
-
-
 
     </div>
    
