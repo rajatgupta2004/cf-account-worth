@@ -65,9 +65,9 @@ function WrongData({id}){
     return(
     <div className="flex justify-center h-screen w-full items-center">
     <BackButton/>
-  <div className='bg-zinc-800 p-8 rounded-lg shadow-2xl text-3xl text-center  font-extrabold'>
-    <h1 className='text-red-500'>{id}</h1>
-    <h2 className='text-white'>Doesn't Exist on CodeForces</h2>
+  <div className='bg-zinc-800 p-8 rounded-lg shadow-2xl  text-center  font-extrabold'>
+    <h1 className='text-red-500 text-3xl'>{id}</h1>
+    <h2 className='text-white text-2xl'>Doesn't Exist on CodeForces</h2>
   </div>
 
 
