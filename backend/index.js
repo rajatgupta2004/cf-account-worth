@@ -25,8 +25,9 @@ app.get('/:username' , async (req,res)=>{
     let numberOfContests = new Set();
     let freqMap = new Map() ;
     const contributionScoreResponse = await axios.get(`https://codeforces.com/api/user.info?handles=${username}`) ;
-    let profileImg = await axios.get(`https://codeforces.com/api/user.info?handles=${username}`);
+    const profileImg = await axios.get(`https://codeforces.com/api/user.info?handles=${username}`);
     const contributionScore = contributionScoreResponse.data.result[0].contribution ;
+    const img  = profileImg.data.result[0].titlePhoto;
     // problems that are accepted
     const newArr = arr.filter((submission)=>{
         return (submission.verdict ==='OK') ;
@@ -61,7 +62,7 @@ app.get('/:username' , async (req,res)=>{
         problemsSolved : uniqueProblems.size,
         score : Math.ceil(score), 
         numberOfContests : numberOfContests.size ,
-        img : profileImg.data.result[0].avatar,
+        img : img,
         heatMap : freqArray
     })
     

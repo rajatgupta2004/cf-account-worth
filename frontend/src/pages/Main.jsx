@@ -41,7 +41,7 @@ function CorrectData({img,prblm,id}){
   <img
     src={img}
     alt="Codeforces account"
-    className="border-2 w-40 h-40 rounded-2xl object-cover p-1"
+    className="border-2 w-30 h-30 rounded-2xl object-cover p-1"
     style={{ marginTop: "51px" }}
   />
   <h6 className='mt-1px font-semibold text-white'>{id}</h6>
