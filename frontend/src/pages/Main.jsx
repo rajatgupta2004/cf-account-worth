@@ -41,11 +41,11 @@ function CorrectData({img,prblm,id}){
   <img
     src={img}
     alt="Codeforces account"
-    className="border-2 w-50% h-50% rounded-2xl object-cover p-1"
+    className="border-2 w-40 h-40 rounded-2xl object-cover p-1"
     style={{ marginTop: "51px" }}
   />
   <h6 className='mt-1px font-semibold text-white'>{id}</h6>
-  <h1 className="text-3xl text-white mb-3 mt-5 font-bold ">Cost of Your Codeforces Account</h1>
+  <h1 className="text-3xl text-white mb-3 mt-5 font-bold ">Worth of Your CF Account</h1>
   <h1 className="relative text-5xl font-extrabold text-amber-500">{prblm}$</h1>
 </div>
 
